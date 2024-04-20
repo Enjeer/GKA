@@ -1,0 +1,588 @@
+:root{
+    --bg-color:   #1C1C1C;
+    --dim-grey:   #3A3A3A;
+    --text-grey:  #6d6d6d;
+    --dark-green: #254029;
+    --light-green:#315F3E;
+    --satur-green:#1EBB4A;
+    --bs-body-bg: #1c1c1c;
+}
+body{
+    scrollbar-width: 0.1svw;
+    background-color: var(--bg-color) !important;
+}
+.cont{
+    width: 100svw;
+    padding: 2.1svw 0;
+    font-family: "Inter", sans-serif;
+}
+.navbar-container{
+    margin: 0 auto;
+    width: 96.5svw;
+    height: 6.2svw;
+    background-color: var(--light-green);
+}
+.content-wrapper{
+    margin: 4.8svw auto 0;
+    width: 92%;
+    /* height: 10svw; */
+    /* background-color: aqua; */
+}
+.hero{
+    color: white;
+    height: 39svw;
+    background-color: var(--dim-grey);
+    /* padding: 1.4% 3.5%; */
+}
+.text-zone{
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    margin: 1.8% 0 3% 3.5%;
+    z-index: 1;
+}
+.header{
+    font-weight: 500;
+    font-size: 3.2svw;
+    /* letter-spacing: -0.05rem; */
+}
+.subhead{
+    margin-top: 1.8svw;
+    font-size: 1.5rem;
+    line-height: 1.85rem;
+}
+.annot{
+    font-size: 1zrem;
+    line-height: 1.3rem;
+    width: 100%;
+    color: #B5B5B5;
+}
+.vid-zone{
+    width: 51%;
+    padding: 1% 0 1.8%;
+    margin: 1.4% 3.5% 1.4% 0;
+    z-index: 1;
+}
+.gif-wrapper{
+    width: 100%;
+    height: 17svw;
+    background: url('./assets/images/1109807_Company_Deal_Employee_1280x720-ezgif.com-video-to-gif-converter.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 1svw;
+}
+.gif-wrapper-worker{
+    width: 48%;
+    height: 16svw;
+    background: url('./assets/images/1110240_Fabric_Construction_Warehouse_1280x720-ezgif.com-video-to-gif-converter.gif');
+    background-size: cover;
+}
+.gif-wrapper-trucks{
+    width: 48%;
+    height: 16svw;
+    background: url('./assets/images/6005886_People_Person_Man_1280x720-ezgif.com-video-to-gif-converter.gif');
+    background-size: cover;
+}
+.svg-bg-hero{
+    height:  39svw;
+    z-index: -1;
+}
+.commercial-deals{
+    width: 100%;
+    height: 38svw;
+    margin-top: 8.7svw;
+    overflow-clip-margin: 1px;
+    background: url('./assets/svg/trio.svg');
+    background-size: cover;
+}
+.text-container{
+    background-color: var(--dim-grey);
+    width: 56.5%;
+    height: 47%;
+}
+.commerce-header-text{
+    margin-right: 3.9%;
+}
+#commerce-side-text{
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin: 0 1.4% 5.1% -1.4%;
+    color: white;
+}
+#num{
+    color: var(--satur-green);
+    font-size: 9.5rem;
+    font-weight: 800;
+    margin-bottom: 4.9%;
+}
+.commerce-bottom-text{
+    color: white;
+    font-size: 1rem;
+    transform: translateY(-170%);
+}
+.truck{ 
+    position: relative;
+    width: 90%;
+    margin: 11.3svw 0;
+    height: 18.2svw;
+    z-index: 5;
+    overflow-x: hidden;
+}
+.backlights{
+    height: 100%;
+    width: 1%;
+    margin-left: 14.8%;
+    padding: 1% 0;
+}
+.backlight{
+    height: 25%;
+    background: linear-gradient(270deg, rgba(163,25,25,1) 0%, rgba(150,67,80,0) 100%);
+}
+.trailer{
+    height: 100%;
+    width: 74.1%;
+    background-color: white;
+    padding: 1% 1.7%;
+}
+.left-hand{
+    width: 50%;
+}
+.trailer-text{
+    font-size: 1.7rem;
+    letter-spacing: .03rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+}
+.cursive-bold{
+    font-weight: 700;
+    font-style: italic;
+}
+.right-hand{
+    width: 45.5%;
+    margin-right: .7%;
+    padding: 4% 0;
+}
+.inputs{
+    background-color: var(--dim-grey);
+    height: 27%;
+}
+.custom-file-upload {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.custom-file-upload input[type="file"] {
+    position: absolute;
+    left: -9999px;
+}
+.custom-file-upload span {
+    padding: 1% 4%;
+    color: var(--text-grey);
+    width: 100%;
+}
+.custom-file-upload span::before {
+    content: '\1F4C2';
+    margin-right: 60%;
+}
+.cabin{
+    width: 6.4%;
+    height: 89%;
+    font-size: 2rem;
+    font-weight: 700;
+    border-top-right-radius: .5svw;
+    border-bottom-right-radius: .5svw;
+    background-color: rgb(160, 54, 54);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-lr;
+    color: white;
+}
+.road{
+    transform: translate(-5svw, -9.5svw);
+    z-index: 1;
+}
+.lines-group{
+    width: 100%;
+    animation: road-animation 8s infinite linear;
+}
+@keyframes road-animation {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.road-line{
+    width: 5svw;
+    height: .8svw;
+    margin-right: 6svw;
+    background-color: #6A5B3E;
+}
+.forest {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: -5svw;
+    width: 100svw;
+    margin-left: -5svw;
+}
+.raw {
+    display: flex;
+    height: fit-content;
+    width: 200%;
+    margin-bottom: -13svw;
+    animation: road-animation 8s infinite linear;
+}
+.tree {
+    width: 12svw;
+    height: 12svw;
+    background-color: #315F3E;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    margin: 0 -2.2svw;
+}
+.forest-mid{
+    background-color: #264930;
+    margin-left: -1.7svw;
+}
+.forest-back{
+    background-color: #1C2E21;
+    margin-left: 1svw;
+}
+#tree-top{
+    margin-top: -2svw;
+}
+#tree-bottom{
+    margin-top: 2svw;
+}
+.mid-row{
+    animation: road-animation 11s infinite linear;
+}
+.back-row{
+    animation: road-animation 20s infinite linear;
+}
+.calm-zone{
+    position: relative;
+    width: 100svw;
+    height: 30svw;
+    margin-left: -5svw;
+    margin-top: 7.5svw;
+    background-color: #315F3E;
+    overflow: visible;
+    z-index: 4;
+    clip-path: polygon( 0% 91.461%,0% 91.461%,2.7% 93.538%,5.576% 95.362%,8.63% 96.91%,11.864% 98.155%,15.281% 99.072%,18.883% 99.635%,22.672% 99.82%,26.65% 99.601%,30.819% 98.953%,35.182% 97.85%,35.182% 97.85%,41.833% 95.79%,48.604% 93.564%,55.436% 91.181%,62.27% 88.651%,69.047% 85.984%,75.707% 83.191%,82.192% 80.28%,88.442% 77.262%,94.398% 74.148%,100% 70.946%,100% 0.01%,52.188% 0.01%,0% 0.01%,0% 91.461% );
+}
+.deadline{
+    position: relative;
+    background-color: #272727;
+    color: white;
+    width: 85%;
+    height: 23svw;
+    margin: -22svw auto 0;
+    z-index: 5;
+    padding: 0;
+    overflow: hidden;
+}
+.flames{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.flame{
+    height: 23svw;
+}
+.flame-texts{
+    width: 50%;
+}
+.flame-bottom-text{
+    color: white;
+    font-size: 1rem;
+}
+.second-calm{
+    margin-left: -5svw;
+    margin-bottom: -20svw;
+    width: 100svw;
+    height: 42svw;
+    transform: translateY(-29svw);
+    z-index: -1;
+}
+.third-calm{
+    position: relative;
+    margin-left: -5svw;
+    width: 100svw;
+    height: 42svw;
+    transform: translateY(-52svw);
+    z-index: -2;
+}
+.invitation-form{
+    margin: 12svw auto;
+    width: 95%;
+    height: 37svw;
+    background-color: #191919;
+    overflow: hidden;
+}
+.future{
+    margin-top: 4svw;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: white;
+    z-index: 5;
+}
+.invitation-bg{
+    width: 86%;
+    height: 37svw;
+    z-index: 0;
+}
+.inv-imb{
+    position: relative;
+    height: 100%;
+}
+.wrapper{
+    position: relative;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    height: 37svw;
+    width: 100%;
+    z-index: -1;
+}
+.invitation-green-bg{
+    height: 100%;
+}
+.invite-form{
+    width: 46%;
+    height: 63%;
+    margin-top: 4%;
+}
+.custom-input{
+    font-size: 1.3rem;
+    z-index: 10;
+    width: 100%;
+    padding: 0 3%;
+    background-color: var(--dim-grey);
+    border: none;
+    box-shadow: none;
+    color: white;
+}
+.custom-input:focus-visible{
+    border: none;
+}
+.custom-input:active{
+    border: none;
+}
+.custom-email{
+    height: 20%;
+}
+.custom-textarea{
+    min-height: 45%;
+    max-height: 45%;
+}
+.custom-button{
+    height: 20%;
+    background: none;
+    font-size: 1.5rem;
+    font-weight: 800
+}
+.catalog-grid{
+    padding: 5% 3%;
+    gap: 10svw;
+}
+.catalog-hero-head{
+    width: 100%;
+    height: 20svw;
+    color: white;
+    padding-left: 2%;
+    padding-top: 5.3%;
+    line-height: 1.7svw;
+}
+catalog-ann{
+    font-size: 1rem;
+}
+.catalog-section-container{
+    justify-content: space-between;
+    width: 100%;
+    gap: 3svw;
+}
+.catalog-header{
+    font-size: 3.8rem;
+    font-weight: 800;
+}
+.catalog-brands{
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+.catalog-element{
+    size: auto;
+    display: flex;
+    flex-direction: column;
+    height: 55svw;
+}
+.half{
+    height: 26svw;
+}
+.more-link{
+    align-self: flex-end;
+    text-decoration: none;
+    color: var(--text-grey);
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+.imageXgradient{
+    height: 100%;
+}
+.gradient{
+    width: 100%;
+    height: 100%;
+    background:  linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+.text-white{
+    color: white;
+    margin: 0.5svw 1svw;
+    font-size: 1.5rem;
+    width: 50%;
+}
+#electronics{
+    background: url('./assets/images/electrocic-engineer-fixes-electronic-equipment\ 1.png');
+    background-size: cover;
+}
+#paint{
+    background: url('./assets/images/images\ \(3\)\ 1.png');
+    background-size: cover;
+}
+#flamable{
+    background: url('./assets/images/images\ \(4\)\ 1.png');
+    background-size: cover;
+}
+#poly{
+    background: url('./assets/images/m3qcc1hj0gvjfjqh17f0zodt6srzdi2i\ 1.png');
+    background-size: cover;
+}
+#equipment{
+    background: url('./assets/images/1622801332916\ 1.png');
+    background-size: cover;
+}
+#meds{
+    background: url('./assets/images/scale_1200\ \(1\)\ 1.png');
+    background-size: cover;
+}
+#tools{
+    background: url('./assets/images/1696235099\ 1.png');
+    background-size: cover;
+}
+#materials{
+    background: url('./assets/images/60d18ba599d82-1\ 1.png');
+    background-size: cover;
+}
+#fire-resq{
+    background: url('./assets/images/protivopozharnoe-oborudovanie\ 1.png');
+    background-size: cover;
+}
+#industrial-mach{
+    background: url('./assets/images/Машиностроение\ 1.png');
+    background-size: cover;
+}
+#engineer{
+    background: url('./assets/images/33628_ispolnitelnye-ustroistva\ 1.png');
+    background-size: cover;
+}
+#househ{
+    background: url('./assets/images/hhghhy56776-01\ 1.png');
+    background-size: cover;
+}
+.analog{
+    width: 95%;
+    height: 37svw;
+    margin: 9.5svw auto 0;
+    background: url(./assets/images/Analog.png);
+    background-size: cover;
+    padding: 0 12% 0 10%;
+}
+.arrow{
+    transform: translate(-1svw, -1svw);
+}
+.analog-text{
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: white;
+    z-index: 10;
+}
+.top-analog{
+    margin-bottom: 10%;
+}
+.bottom-analog{
+    margin-top: 10%;
+}
+.card-holder{
+    margin: 11svw auto;
+    width: 100%;
+}
+.c-card{
+    width: 65%;
+    height: 37.3svw;
+    background: url('./assets/images/card-base.png');
+    background-size: cover;
+    z-index: 5;
+    padding: 5.5% 5%;
+}
+.tilted-card{
+    width: 58svw;
+    height: 37svw;
+    margin: -6svw 0 0 9svw;
+    background: url('./assets/images/tilted-card.png');
+    background-size: cover;
+    z-index: 3;
+    rotate: 6deg;
+}
+.payment-options{
+    margin-top: 4.2svw;
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: white;
+    line-height: 3.75svw;
+}
+.company-invite{
+    margin: 0 auto;
+    height: 29.5svw;
+    width: 95%;
+    background-color: #2a2a2a;
+}
+.inv-base{
+    width: 100%;
+    height: 100%;
+}
+.handshake{
+    width: 43%;
+    height: 100%;
+    align-self: flex-end;
+}
+.gradients{
+    height: 29.5svw;
+    width: 95%;
+    align-self: flex-end;
+}
+.transparent-sheet{
+    position: absolute;
+    background-color: #2a2a2a7a;
+    height: 100%;
+}
+.gr-1{
+    width: 68.3%;
+    margin-left: 13%;
+}
+.gr-2{
+    width: 65.1%;
+    margin-left: 12.8%;
+}
+.gr-3{
+    width: 61.4%;
+    margin-left: 12.6%;
+}
+.gr-4{
+    width: 57.5%;
+    margin-left: 12.5%;
+}
+.gr-5{
+    width: 53.5%;
+    margin-left: 12.5%;
+}
