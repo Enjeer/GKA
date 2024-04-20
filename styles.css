@@ -12,7 +12,7 @@ body{
     background-color: var(--bg-color) !important;
 }
 .cont{
-    width: 100svw;
+    width: 100%;
     padding: 2.1svw 0;
     font-family: "Inter", sans-serif;
 }
@@ -44,6 +44,8 @@ body{
 .header{
     font-weight: 500;
     font-size: 3.2svw;
+    color: white;
+    z-index: 10;
     /* letter-spacing: -0.05rem; */
 }
 .subhead{
@@ -563,26 +565,44 @@ catalog-ann{
 }
 .transparent-sheet{
     position: absolute;
-    background-color: #2a2a2a7a;
+    background-color: #2a2a2a86;
     height: 100%;
 }
 .gr-1{
-    width: 68.3%;
-    margin-left: 13%;
+    width: 72%;
 }
 .gr-2{
-    width: 65.1%;
-    margin-left: 12.8%;
+    width: 68.5%;
 }
 .gr-3{
-    width: 61.4%;
-    margin-left: 12.6%;
+    width: 64.6%;
 }
 .gr-4{
-    width: 57.5%;
-    margin-left: 12.5%;
+    width: 60.5%;
 }
 .gr-5{
-    width: 53.5%;
-    margin-left: 12.5%;
+    width: 56.5%;
+}
+.text-inv{
+    z-index: 10;
+    width: 100%;
+    margin: 1.2svw 3.5svw;
+}
+.inv-header{
+    font-weight: 700;
+    word-spacing: -.1svw;
+    line-height: 4svw;
+    width: 67%;
+}
+.invv-bottom{
+    margin-top: 3%;
+    width: 40%;
+    font-size: 1.25rem;
+    line-height: 1.5svw;
+}
+.footer{
+    width: 99.3%;
+    height: 24.8svw;
+    margin: 13.3svw -1svw 0;
+    background-color: red;
 }
